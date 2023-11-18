@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<div class="maga">
+    <div class="border-bottom pb-4">
+        <h2 class="fs--1">Quản lý người dùng</h2>
+        <ul class="nav nav-links mb-3 mb-lg-2">
+            <li class="nav-item"><a class="nav-link ps-0 active" aria-current="page" href="#"><span>All </span><span class="text-700 fw-semi-bold">(68817)</span></a></li>
+            <li class="nav-item"><a class="nav-link ps-0" href="#"><span>New </span><span class="text-700 fw-semi-bold">(3)</span></a></li>
+        </ul>
+        <div class="d-flex justify-content-between">
+            <div class="search-box d-flex">
+                <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search products" aria-label="Search" aria-describedby="addon-wrapping">
+                      </div>
+                </form>
+                <div class="btn-group ms-4" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-secondary btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Thời gian
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tháng này</a></li>
+                            <li><a class="dropdown-item" href="#">Tuần này</a></li>
+                            <li><a class="dropdown-item" href="#">Hôm nay</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary">More filter</button>
+                </div>
+            </div>
+            <div class="btn-toolbar">
+                <button type="button" class="btn btn-primary add_product_btn fw-bold">
+                    <i class="fa-solid fa-plus"></i> Thêm
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="white-space-nowrap fs--1 align-middle ps-0" style="max-width:20px; width:18px;">
+                      <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox"></div>
+                    </th>
+                    <th class="position-static" scope="col">CUSTOMER</th>
+                    <th class="position-static" scope="col">EMAIL</th>
+                    <th class="position-static" scope="col">PHONE</th>
+                    <th class="position-static" scope="col">ADDRESS</th>
+                    <th class="position-static" scope="col">ORDER</th>
+                    <th class="position-static" scope="col">CREATED AT</th>
+                    <th class="position-static text-center" scope="col">THAO TÁC</th>
+                </tr>
+            </thead>
+            <tbody class="manage_user_table_content">
+                <!-- Data in here -->
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-between">
+        <div>
+            <span class="fw-semi-bold fs-6">1 to 10 Items of 16</span>
+        </div>
+        <ul class="pagination">
+            <li class="">
+                <button class="btn"><i class="fa-solid fa-chevron-left"></i></button>
+            </li>
+            <li class="active">
+                <button class="btn active">1</button>
+            </li>
+            <li class="">
+                <button class="btn">2</button>
+            </li>
+            <li class="">
+                <button class="btn "><i class="fa-solid fa-chevron-right"></i></button>
+            </li>
+        </ul>
+    </div>
+</div>

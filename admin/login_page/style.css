@@ -1,0 +1,9 @@
+.login_page {
+    display: flex;
+    justify-content: center;
+}
+
+.form_card {
+    width: 700;
+    margin-top: 100px;
+}

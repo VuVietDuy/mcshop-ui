@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<div class="">
+    <div class="border-bottom pb-4">
+        <h2 class="fs--1">Quản lý sản phẩm</h2>
+        <ul class="nav nav-links mb-3 mb-lg-2">
+            <li class="nav-item"><a class="nav-link ps-0 active" aria-current="page" href="#"><span>All </span><span class="text-700 fw-semi-bold">(68817)</span></a></li>
+            <li class="nav-item"><a class="nav-link ps-0" href="#"><span>Pending payment </span><span class="text-700 fw-semi-bold">(16)</span></a></li>
+            <li class="nav-item"><a class="nav-link ps-0" href="#"><span>Unfulfilled  </span><span class="text-700 fw-semi-bold">(17)</span></a></li>
+            <li class="nav-item"><a class="nav-link ps-0" href="#"><span>Failed</span><span class="text-700 fw-semi-bold">(3)</span></a></li>
+        </ul>
+        <div class="d-flex justify-content-between">
+            <div class="search-box d-flex">
+                <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search products" aria-label="Search" aria-describedby="addon-wrapping">
+                      </div>
+                </form>
+                <div class="btn-group ms-4" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Payment status
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">COMPLETE</a></li>
+                            <li><a class="dropdown-item" href="#">PENDING</a></li>
+                            <li><a class="dropdown-item" href="#">CANCELLED</a></li>
+                            <li><a class="dropdown-item" href="#">PAID</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fulfil status
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">COMPLETE</a></li>
+                            <li><a class="dropdown-item" href="#">READY TO PICKUP</a></li>
+                            <li><a class="dropdown-item" href="#">CANCELLED</a></li>
+                            <li><a class="dropdown-item" href="#">PARTIALLY FULFILED</a></li>
+                            <li><a class="dropdown-item" href="#">UNFULFILED</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary">More filter</button>
+                </div>
+            </div>
+            <div class="btn-toolbar">
+                <button type="button" class="btn btn-primary add_product_btn">
+                    <i class="fa-solid fa-plus"></i> Thêm
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="white-space-nowrap fs--1 align-middle ps-0" style="max-width:20px; width:18px;">
+                      <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox"></div>
+                    </th>
+                    <th class="position-static" scope="col">ORDER</th>
+                    <th class="position-static" scope="col">TOTAL</th>
+                    <th class="position-static" scope="col">PAYMENT SATUS</th>
+                    <th class="position-static" scope="col">FULFILMENT STATUS</th>
+                    <th class="position-static" scope="col">DELIVERY TYPE</th>
+                    <th class="position-static" scope="col">DATE</th>
+                </tr>
+            </thead>
+            <tbody class="manage_order_table_content">
+                <tr class="position-static">
+                    <td class="fs--1 align-middle">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row="{&quot;product&quot;:&quot;Razer Kraken v3 x Wired 7.1 Surroung Sound Gaming headset&quot;,&quot;productImage&quot;:&quot;/products/5.png&quot;,&quot;price&quot;:&quot;$120&quot;,&quot;category&quot;:&quot;Fashion&quot;,&quot;tags&quot;:[&quot;Music&quot;,&quot;Audio&quot;,&quot;Meeting&quot;,&quot;Record&quot;,&quot;Sound&quot;],&quot;star&quot;:false,&quot;vendor&quot;:&quot;Inertia Fashion&quot;,&quot;publishedOn&quot;:&quot;Nov 8, 5:32 PM&quot;}"></div>
+                    </td>
+                    <td class="order align-middle">#1010</td>
+                    <td class="product align-middle">$120</td>
+                    <td class="name align-middle">
+                        <div class="d-flex align-items-center">
+                            <div class="avatar rounded-circle overflow-hidden" style="width: 32px; height: 32px;">
+                                <img class="" src="../../access/image/Polo/polo_knit_cream.jpg" alt="" style="width: 32px;">
+                            </div>
+                            <span class="text-1100 fw-bold ms-2">Vũ Viết Duy</span>
+                        </div>
+                    </td>
+                    <td class="category align-middle">
+                        <span class="badge badge-tag me-2 mb-2 text-bg-success">PAID</span>
+                    </td>
+                    <td class="tags align-middle white-space-nowrap review pb-2 ps-3">
+                        <span class="badge badge-tag me-2 mb-2 text-bg-success">FULFILED</span>
+                    </td>
+                    <td class="time align-middle white-space-nowrap text-600">Nov 8, 5:32 PM</td>
+                    <td class="action ps-2 align-middle">
+                        <div class="dropdown">
+                            <button class="btn bg-body-tertiary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Chỉnh sửa</a></li>
+                              <li><a class="dropdown-item" href="#">Xoá</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="position-static">
+                    <td class="fs--1 align-middle">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row="{&quot;product&quot;:&quot;Razer Kraken v3 x Wired 7.1 Surroung Sound Gaming headset&quot;,&quot;productImage&quot;:&quot;/products/5.png&quot;,&quot;price&quot;:&quot;$120&quot;,&quot;category&quot;:&quot;Fashion&quot;,&quot;tags&quot;:[&quot;Music&quot;,&quot;Audio&quot;,&quot;Meeting&quot;,&quot;Record&quot;,&quot;Sound&quot;],&quot;star&quot;:false,&quot;vendor&quot;:&quot;Inertia Fashion&quot;,&quot;publishedOn&quot;:&quot;Nov 8, 5:32 PM&quot;}"></div>
+                    </td>
+                    <td class="order align-middle">#1010</td>
+                    <td class="product align-middle">$120</td>
+                    <td class="name align-middle">
+                        <div class="d-flex align-items-center">
+                            <div class="avatar rounded-circle overflow-hidden" style="width: 32px; height: 32px;">
+                                <img class="" src="../../access/image/Polo/polo_knit_cream.jpg" alt="" style="width: 32px;">
+                            </div>
+                            <span class="text-1100 fw-bold ms-2">Vũ Viết Duy</span>
+                        </div>
+                    </td>
+                    <td class="category align-middle">
+                        <span class="badge badge-tag me-2 mb-2 text-bg-success">PAID</span>
+                    </td>
+                    <td class="tags align-middle white-space-nowrap review pb-2 ps-3">
+                        <span class="badge badge-tag me-2 mb-2 text-bg-success">FULFILED</span>
+                    </td>
+                    <td class="time align-middle white-space-nowrap text-600">Nov 8, 5:32 PM</td>
+                    <td class="action ps-2 align-middle">
+                        <div class="dropdown">
+                            <button class="btn bg-body-tertiary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Chỉnh sửa</a></li>
+                              <li><a class="dropdown-item" href="#">Xoá</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="position-static">
+                    <td class="fs--1 align-middle">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" data-bulk-select-row="{&quot;product&quot;:&quot;Razer Kraken v3 x Wired 7.1 Surroung Sound Gaming headset&quot;,&quot;productImage&quot;:&quot;/products/5.png&quot;,&quot;price&quot;:&quot;$120&quot;,&quot;category&quot;:&quot;Fashion&quot;,&quot;tags&quot;:[&quot;Music&quot;,&quot;Audio&quot;,&quot;Meeting&quot;,&quot;Record&quot;,&quot;Sound&quot;],&quot;star&quot;:false,&quot;vendor&quot;:&quot;Inertia Fashion&quot;,&quot;publishedOn&quot;:&quot;Nov 8, 5:32 PM&quot;}"></div>
+                    </td>
+                    <td class="order align-middle">#1010</td>
+                    <td class="product align-middle">$120</td>
+                    <td class="name align-middle">
+                        <div class="d-flex align-items-center">
+                            <div class="avatar rounded-circle overflow-hidden" style="width: 32px; height: 32px;">
+                                <img class="" src="../../access/image/Polo/polo_knit_cream.jpg" alt="" style="width: 32px;">
+                            </div>
+                            <span class="text-1100 fw-bold ms-2">Vũ Viết Duy</span>
+                        </div>
+                    </td>
+                    <td class="category align-middle">
+                        <span class="badge badge-tag me-2 mb-2 text-bg-success">PAID</span>
+                    </td>
+                    <td class="tags align-middle white-space-nowrap review pb-2 ps-3">
+                        <span class="badge badge-tag me-2 mb-2 text-bg-success">FULFILED</span>
+                    </td>
+                    <td class="time align-middle white-space-nowrap text-600">Nov 8, 5:32 PM</td>
+                    <td class="action ps-2 align-middle">
+                        <div class="dropdown">
+                            <button class="btn bg-body-tertiary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Chỉnh sửa</a></li>
+                              <li><a class="dropdown-item" href="#">Xoá</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-between">
+        <div>
+            <span class="fw-semi-bold fs-6">1 to 10 Items of 16</span>
+        </div>
+        <ul class="pagination">
+            <li class="">
+                <button class="btn"><i class="fa-solid fa-chevron-left"></i></button>
+            </li>
+            <li class="active">
+                <button class="btn active">1</button>
+            </li>
+            <li class="">
+                <button class="btn">2</button>
+            </li>
+            <li class="">
+                <button class="btn "><i class="fa-solid fa-chevron-right"></i></button>
+            </li>
+        </ul>
+    </div>
+</div>
