@@ -10,10 +10,8 @@ manageUserNav.addEventListener('click', function() {
             setActive(manageUserNav)
 
             const tableManageUser = document.querySelector(".manage_user_table_content")
-            console.log(tableManageUser);
 
             customers.map((customer) => {
-                console.log("object");
                 addRowToManageUserTable(tableManageUser, customer.srcAvatarImg, customer.customerName, customer.email, customer.phone, customer.address, customer.orderAmount, customer.createdAt)
             })
         });
@@ -29,15 +27,15 @@ function addRowToManageUserTable(tableManageUser, srcAvatarImg, customerName, em
                 <td class="name align-middle">
                     <div class="d-flex align-items-center">
                         <div class="avatar rounded-circle overflow-hidden" style="width: 32px; height: 32px;">
-                            <img class="" src="${srcAvatarImg}" alt="" style="width: 32px;">
+                            <img class="" src="${srcAvatarImg === "" ? "../access/image/Avatar/avatar.jpeg" : srcAvatarImg}" alt="" style="width: 32px;">
                         </div>
                         <span class="text-1100 fw-bold ms-2">${customerName}</span>
                     </div>
                 </td>
                 <td class="email align-middle">${email}</td>
-                <td class="phone align-middle">${phone}</td>
+                <td class="phone align-middle text-center">${phone}</td>
                 <td class="address align-middle">${address}</td>
-                <td class="tags align-middle">${orderAmount}</td>
+                <td class="tags align-middle text-center">${orderAmount}</td>
                 <td class="time align-middle white-space-nowrap text-600">${createdAt}</td>
                 <td class="action ps-2 align-middle d-flex justify-content-center">
                     <div class="dropdown">

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mcshop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header -->
+    <header class="shadow">
+        <div class="navbar navbar-expand-lg navbar-light px-0 border-bottom">
+            <div class="d-flex justyfi-content-center container">
+                <div class="col-auto">
+                    <a href="#">
+                        <img src="../../access/image/logo_mcshop.png" alt="" style="height: 64px;">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <form action="" method="get">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-white border-none" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input class="form-control" type="text" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-auto order-md-1">
+                    <ul class="navbar-nav navbar-nav-icons flex-row me-n2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/cart/index.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Thong bao</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="/user/profile/address_infor/index.html">Trang cá nhân</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/user/sign_in/index.html">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="navbar-nav flex-row justify-content-center">
+                <li class="nav-item">
+                    <div class="dropdown ms-4 me-4 px-3">
+                        <button class="btn dropdown-toggle border-none border_none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cửa hàng
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Cardigan</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Hoodie</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Jacket</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Polo</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Sweater</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">T-shirt</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-4 me-4 px-3" href="#">
+                        Giảm giá
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-4 me-4 px-3" href="/user/contact/index.html">
+                        Liên hệ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-4 me-4 px-3" href="/user/about_us/index.html">
+                        Về chúng tôi
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown ms-4 me-4 px-3">
+                        <button class="btn dropdown-toggle border-none border_none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Chăm sóc khách hàng
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="/user/customer_care/easy_shopping/index.html">Mua sắm dễ dàng</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="/user/customer_care/exchange_policy/index.html">Chính sách đổi trả</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="/user/customer_care/shipping_policy/index.html">Chính sách vận chuyển</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="/user/customer_care/purchase_storage/index.html">Mua hàng và bảo quản</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Sweater</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">T-shirt</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container pt-5 mt-4 pb-5">
+        <div class="d-flex">
+        </div>
+        <div class="filter border-bottom py-3">
+            <div class="">
+                <div class="d-flex justify-content-between">
+                    <button class="btn" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="color: rgb(85, 85, 85);">
+                        <i class="fa-solid fa-filter"></i> Lọc
+                    </button>
+                    <div class="d-flex">
+                        <div class="d-flex align-items-center justify-content-center me-4">
+                            <span>Sắp xếp</span>
+                        </div>
+                        <div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Giá từ thấp đến cao</option>
+                                <option value="2">Giá từ cao đến thấp</option>
+                                <option value="3">Phổ biến</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse mt-4" id="collapseExample">
+                    <div class="card card-body">
+                        <form action="">
+                            <div class="header text-end pb-3">
+                                <button class="btn btn-close"></button>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 row">
+                                    <h6 class="mb-4 p-4">Màu săc</h6>
+                                    <div class="col-4 p-4">
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Red
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Orange
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Yellow
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Green
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Cream
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Light Brown
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 p-4">
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Grey
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Black White
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Light Blue
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                White
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Dark Teal
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Navy
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 row">
+                                    <h6 class="mb-4 p-4">Kích cỡ</h6>
+                                    <div class="col-4 p-4">
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                0
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                8US
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                12US
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                A3
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                A4
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                B1
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 p-4">
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                A1
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                A2
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                B2
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                B3
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                B4
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                B5
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end pt-4">
+                                <button class="btn btn-light" style="width: 100px;">Xoá</button>
+                                <button class="btn btn-dark ms-4" style="width: 160px;">Tìm kiếm</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card">
+                    <div class="thumbnail">
+                        <img src="../../access/image/Cardigan/cardigan_play_black.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: black;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: burlywood;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: cadetblue;"></span>
+                        </div>
+                        <a class="text-secondary" href="#" style="text-decoration: none;">CARDIGAN PLAY BLACK</a>
+                        <div>
+                            <span>100.000VND</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <div class="thumbnail">
+                        <img src="../../access/image/Hoodie/hoodie_basic_boxy_black.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: black;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: burlywood;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: cadetblue;"></span>
+                        </div>
+                        <a class="text-secondary" href="#" style="text-decoration: none;">HOODIE PLAY BLACK</a>
+                        <div>
+                            <span>100.000VND</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><div class="col-md-3">
+                <div class="product-card">
+                    <div class="thumbnail">
+                        <img src="../../access/image/Cardigan/cardigan_play_green.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: black;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: burlywood;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: cadetblue;"></span>
+                        </div>
+                        <a class="text-secondary" href="#" style="text-decoration: none;">CARDIGAN PLAY BLACK</a>
+                        <div>
+                            <span>100.000VND</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><div class="col-md-3">
+                <div class="product-card">
+                    <div class="thumbnail">
+                        <img src="../../access/image/Hoodie/hoodie_basic_boxy_brown.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: black;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: burlywood;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: cadetblue;"></span>
+                        </div>
+                        <a class="text-secondary" href="#" style="text-decoration: none;">HOODIE PLAY BLACK</a>
+                        <div>
+                            <span>100.000VND</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><div class="col-md-3">
+                <div class="product-card">
+                    <div class="thumbnail">
+                        <img src="../../access/image/Jacket/jacket_line_black.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: black;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: burlywood;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: cadetblue;"></span>
+                        </div>
+                        <a class="text-secondary" href="#" style="text-decoration: none;">JACKET PLAY BLACK</a>
+                        <div>
+                            <span>100.000VND</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><div class="col-md-3">
+                <div class="product-card">
+                    <div class="thumbnail">
+                        <img src="../../access/image/Cardigan/cardigan_play_black.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: black;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: burlywood;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: cadetblue;"></span>
+                        </div>
+                        <a class="text-secondary" href="#" style="text-decoration: none;">CARDIGAN PLAY BLACK</a>
+                        <div>
+                            <span>100.000VND</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><div class="col-md-3">
+                <div class="product-card">
+                    <div class="thumbnail">
+                        <img src="../../access/image/Cardigan/cardigan_play_black.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: black;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: burlywood;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: cadetblue;"></span>
+                        </div>
+                        <a class="text-secondary" href="#" style="text-decoration: none;">CARDIGAN PLAY BLACK</a>
+                        <div>
+                            <span>100.000VND</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><div class="col-md-3">
+                <div class="product-card">
+                    <div class="thumbnail">
+                        <img src="../../access/image/Cardigan/cardigan_play_black.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: black;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: burlywood;"></span>
+                            <span class="d-block me-2" style="width: 12px; height: 12px; background-color: cadetblue;"></span>
+                        </div>
+                        <a class="text-secondary" href="#" style="text-decoration: none;">CARDIGAN PLAY BLACK</a>
+                        <div>
+                            <span>100.000VND</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 pt-5 border-top">
+        <div class="container py-5">
+            <div class="row">
+                 <div class="col-4 justify-content-start">
+                    <h5 class="pb-4">VỀ CHÚNG TÔI</h5>
+                    <ul class="list-unstyled fw-light">
+                        <li class="pb-4">McShop - Share your color with world</li> 
+                        <li class="pb-2">HỘ KINH DOANH Red Label </li>
+                        <li class="pb-2">GPKD được cấp bởi Cục Cảnh sát QLHC TTXH </li>
+                        <li class="pb-2">Trụ sở kinh doanh:Km10, Nguyễn Trãi, tp Hà Nội</li>
+                        <li class="pb-2">Mã số thuế: 458912H4</li>
+                        <li class="pb-2">Ngày cấp: 15/01/2022</li>
+                        <li class="pb-2">Người đại diện: Vũ Viết Duy</li>
+                        <li class="pb-2">Mã số thuế cá nhân: 897516H-5421</li>
+                    </ul>
+                 </div>
+
+                 <div class="col-2">
+                    <h5 class="pb-4">LIÊN HỆ</h5>
+                    <ul class="list-unstyled">
+                        <li class="">Hotline</li>
+                        <li class="pb-3 fw-bold">1900657892 </li>
+                        <li class="">Email</li>
+                        <li class="pb-3 fw-bold">Duy456@gmail.com</li>
+                        <li class="">Thứ hai - Chủ nhật</li>
+                        <li class="pb-3 fw-bold">09:30~21:30</li>
+                        <li class="">Email liên hệ công việc</li>
+                        <li class="pb-3 fw-bold">Dyudt@gmail.com</li>
+                    </ul>
+                 </div>
+
+                 <div class="col-2">
+                    <h5 class="pb-4">DANH MỤC SẢN PHẨM</h5>
+                    <ul class="list-unstyled">
+                        <li class="pb-4"><a class="nav-link" href="#">Tất cả</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Cardigan</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Hoodie</a></li>                  
+                        <li class="pb-4"><a class="nav-link" href="#">Jacket</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Polo</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Sweater</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">T-Shirt</a></li>
+                    </ul>
+                 </div>
+
+                 <div class="col-2">
+                    <h5 class="pb-4">HỖ TRỢ</h5>
+                    <ul class="list-unstyled fw-light">
+                        <li class="pb-4"><a class="nav-link" href="#">DUY FABBRIC</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Tài khoản</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Chính sách vận chuyển</a></li>                  
+                        <li class="pb-4"><a class="nav-link" href="#">Thanh toán trực tuyến</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Chính sách bảo mật</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Chính sách bảo hành</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Chính sách khiếu nại</a></li>
+                    </ul>
+                 </div>
+
+                 <div class="col-2">
+                    <h5 class="pb-4">CỬA HÀNG</h5>
+                    <ul class="list-unstyled fw-light">
+                        <li class="pb-4">12 Nguyễn Trãi, Hà Đông, tp Hà Nội</li>
+                        <li class="pb-4">8686 Trung Hòa, Cầu Giấy,tp Hà Nội </li>
+                    </ul>
+                 </div>
+            </div>      
+        </div>
+    </footer>
+
+    <script src="../data/product.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

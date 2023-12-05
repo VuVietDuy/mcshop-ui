@@ -8,3 +8,7 @@ body {
 .bg-phoenix-secondary {
     background-color: #f5f7fa;
 }
+
+.border_none {
+    border: none;
+}

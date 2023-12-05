@@ -14,7 +14,7 @@
             <div class="d-flex justyfi-content-center container">
                 <div class="col-auto">
                     <a href="/user/store/index.html">
-                        <img src="../../access/image/logo_mcshop.png" alt="" style="height: 64px;">
+                        <img src="../../../access/image/logo_mcshop.png" alt="" style="height: 64px;">
                     </a>
                 </div>
                 <div class="col-md-6">
@@ -105,74 +105,37 @@
         </div>
     </header>
 
-    <div class="cart container pb-5">
+    <!-- Content -->
+    <div class="customer-care container pb-5">
+        <!-- Code ở đây -->
+        <!-- @author Hoàng Hữu Tiến Dũng -->
         <nav class="mt-4 mb-4" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="/user/store/index.html">Trang chủ</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+              <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Trang chủ</a></li>
+              <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Chăm sóc khách hàng</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Mua sắm dễ dàng</li>
             </ol>
         </nav>
-        <h3 class="display-6 mb-4">Giỏ hàng của bạn</h3>
-        <div class="row">
-            <table class="table fs--1 mb-0 border-top border-200">
-                <thead>
-                    <tr>
-                        <th class="sort white-space-nowrap align-middle fs--2" scope="col"></th>
-                        <th class="sort white-space-nowrap align-middle" scope="col" style="min-width:250px;">Sản phẩm</th>
-                        <th class="sort align-middle" scope="col" style="width:80px;">Màu</th>
-                        <th class="sort align-middle" scope="col" style="width:150px;">Kích cỡ</th>
-                        <th class="sort align-middle text-end pe-3" scope="col" style="width:300px;">Giá</th>
-                        <th class="sort align-middle text-center" scope="col" style="width:200px;">Số lượng</th>
-                        <th class="sort align-middle text-end" scope="col" style="width:250px;">Tổng</th>
-                        <th class="sort text-end align-middle pe-0" scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody class="list" id="cart-table-body">
-                    <tr class="cart-table-row btn-reveal-trigger">
-                        <td class="align-middle white-space-nowrap"><a class="d-block border rounded-2 over-flow-hiden" href=""><img src="../../access/image/Cardigan/cardigan_play_black.jpg" alt="" width="53"></a></td>
-                        <td class="products align-middle"><a class="fw-semi-bold mb-0 line-clamp-2" href="../../../apps/e-commerce/landing/product-details.html">Cardigan Play</a></td>
-                        <td class="color align-middle white-space-nowrap fs--1 text-900">Glossy black</td>
-                        <td class="size align-middle white-space-nowrap text-700 fs--1 fw-semi-bold">XL</td>
-                        <td class="price align-middle text-900 fs--1 fw-semi-bold text-end pe-3">299.000</td>
-                        <td class="quantity align-middle fs-0 text-center">
-                            <div class="input-group input-group-sm flex-nowrap" data-quantity="data-quantity"><button class="btn btn-sm px-2" data-type="minus">-</button><input class="form-control text-center input-spin-none bg-transparent border-0 px-0" type="number" min="1" value="2" aria-label="Amount (to the nearest dollar)"><button class="btn btn-sm px-2" data-type="plus">+</button></div>
-                        </td>
-                        <td class="total align-middle fw-bold text-1000  text-end">598.000</td>
-                        <td class="align-middle white-space-nowrap text-end pe-0 ps-3">
-                            <button class="btn btn-sm text-500 hover-text-600 me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr class="cart-table-row btn-reveal-trigger">
-                        <td class="align-middle white-space-nowrap"><a class="d-block border rounded-2 over-flow-hiden" href=""><img src="../../access/image/Cardigan/cardigan_play_green.jpg" alt="" width="53"></a></td>
-                        <td class="products align-middle"><a class="fw-semi-bold mb-0 line-clamp-2" href="../../../apps/e-commerce/landing/product-details.html">Cardigan Play</a></td>
-                        <td class="color align-middle white-space-nowrap fs--1 text-900">Green</td>
-                        <td class="size align-middle white-space-nowrap text-700 fs--1 fw-semi-bold">XL</td>
-                        <td class="price align-middle text-900 fs--1 fw-semi-bold text-end pe-3">299.000</td>
-                        <td class="quantity align-middle text-center">
-                            <div class="input-group input-group-sm flex-nowrap" data-quantity="data-quantity"><button class="btn btn-sm px-2" data-type="minus">-</button><input class="form-control text-center input-spin-none bg-transparent border-0 px-0" type="number" min="1" value="2" aria-label="Amount (to the nearest dollar)"><button class="btn btn-sm px-2" data-type="plus">+</button></div>
-                        </td>
-                        <td class="total align-middle fw-bold text-1000 text-end">598.000</td>
-                        <td class="align-middle white-space-nowrap text-end pe-0 ps-3">
-                            <button class="btn btn-sm text-500 hover-text-600 me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr class="cart-table-row btn-reveal-trigger">
-                        <td class="text-1100 fw-semi-bold ps-0 fs-0" colspan="6">
-                            <h5 class="mb-0">Tổng cộng:</h5>
-                        </td>
-                        <td class="text-1100 fw-bold text-end fs-0">1.196.000</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="d-flex justify-content-end mt-4 py-3">
-                <button type="button" class="btn btn-light border me-4" style="width: 200px;">Tiếp tục mua sắm</button>
-                <button type="button" class="btn btn-dark" style="width: 200px;">Mua hàng</button>
-            </div>
+        
+        <h5 class="text-center mt-1">MUA SẮM DỄ DÀNG</h5>
+
+        <div class="pt-3">
+            <div class="fw-light">
+                <p class="fw-light">
+                    Với chương trình “Mua sắm dễ dàng”, chúng mình luôn đặt sự hài lòng của bạn lên hàng đầu, thực hiện tôn chỉ luôn luôn giải quyết mọi vấn đề của khách hàng một cách nhanh chóng, tiện lợi và dễ dàng.Vì vậy bạn sẽ thấy rất nhiều chính sách, những dịch vụ mà chúng mình đang và sẽ theo đuổi để đảm bảo sự hài lòng của bạn 100% tại McShop.
+                </p>
+                <h5 class="fw-light">CAM KẾT TRẢ LỜI 100% CUỘC GỌI CỦA BẠN</h5>
+                <p class="fw-light">
+                    Trong trường hợp quá tải thì tụi mình sẽ chủ động liên hệ lại ngay sau đó, nên các bạn hoàn toàn yên tâm là vấn đề của bạn sẽ được chúng mình giải quyết sớm thôi.
+                    Vấn đề của các bạn sẽ được tụi mình hỗ trợ hết lòng trong thời gian nhanh nhất. Đội ngũ chăm sóc khách hàng sẽ hỗ trợ xử lí vấn đề cho bạn ngay lập tức, với mục tiêu mang lại sự hài lòng 100% cho trải nghiệm của bạn.
+                </p>
+                <h5 class="fw-light">DỊCH VỤ ĐỔI TRA TẬN NƠI</h5>
+                <p class="fw-light">
+                    Trong trường hợp quá tải thì tụi mình sẽ chủ động liên hệ lại ngay sau đó, nên các bạn hoàn toàn yên tâm là vấn đề của bạn sẽ được chúng mình giải quyết sớm thôi.
+                    Vấn đề của các bạn sẽ được tụi mình hỗ trợ hết lòng trong thời gian nhanh nhất.
+                    Đội ngũ chăm sóc khách hàng sẽ hỗ trợ xử lí vấn đề cho bạn ngay lập tức, với mục tiêu mang lại sự hài lòng 100% cho trải nghiệm của bạn.
+                </p>
+            </div> 
         </div>
     </div>
 
@@ -244,6 +207,7 @@
             </div>      
         </div>
     </footer>
+
 
     <script src="../data/product.js"></script>
     <script src="./main.js"></script>

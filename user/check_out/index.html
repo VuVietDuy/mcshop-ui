@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mcshop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header -->
+    <header class="shadow">
+        <div class="navbar navbar-expand-lg navbar-light px-0 border-bottom">
+            <div class="d-flex justyfi-content-center container">
+                <div class="col-auto">
+                    <a href="/user/store/index.html">
+                        <img src="../../access/image/logo_mcshop.png" alt="" style="height: 64px;">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <form action="" method="get">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-white border-none" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input class="form-control" type="text" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-auto order-md-1">
+                    <ul class="navbar-nav navbar-nav-icons flex-row me-n2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/cart/index.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Thong bao</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="/user/profile/address_infor/index.html">Trang cá nhân</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/user/sign_in/index.html">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="navbar-nav flex-row justify-content-center">
+                <li class="nav-item">
+                    <div class="dropdown ms-4 me-4 px-3">
+                        <button class="btn dropdown-toggle border-none border_none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cửa hàng
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Cardigan</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Hoodie</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Jacket</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Polo</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">Sweater</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="#">T-shirt</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-4 me-4 px-3" href="#">
+                        Giảm giá
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-4 me-4 px-3" href="/user/contact/index.html">
+                        Liên hệ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-4 me-4 px-3" href="/user/about_us/index.html">
+                        Về chúng tôi
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown ms-4 me-4 px-3">
+                        <button class="btn dropdown-toggle border-none border_none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Chăm sóc khách hàng
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="/user/customer_care/easy_shopping/index.html">Mua sắm dễ dàng</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="/user/customer_care/exchange_policy/index.html">Chính sách đổi trả</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="/user/customer_care/shipping_policy/index.html">Chính sách vận chuyển</a></li>
+                            <li><a class="dropdown-item nav-link ps-4 pe-4" href="/user/customer_care/purchase_storage/index.html">Mua hàng và bảo quản</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="contact container pb-5">
+        <nav class="mt-4 mb-4" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/user/store/index.html">Trang chủ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="shipping_info_b1 d-block col-12 col-lg-6 pe-4" style="border-right: solid black 1px;">
+                <div class="pb-4">
+                    <h4>Thông tin giao hàng</h4>
+                    <a class="text-decoration-none fw-light" href="">Chọn địa chỉ giao hàng khác -></a>
+                </div>
+                <form class="row g-3">
+                    <div class="col-12 mt-4 mb-3">
+                        <input type="text" value="Vũ Viết Duy" class="form-control" id="name" placeholder="Họ và tên*" readonly="true">
+                      </div>
+                    <div class="col-md-12 mb-3">
+                      <input type="email" value="vuvietduy@gmail.com" class="form-control" id="inputEmail" placeholder="Email*" readonly="true">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <input type="text" value="0987654321" class="form-control" id="inputPhone" placeholder="Số điện thoại*" readonly="true">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" value="Hà Nội" class="form-control" id="inputCity" placeholder="Tỉnh/Thành phố*" readonly="true">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" value="Chương Mỹ" class="form-control" id="inputDistrict" placeholder="Quận/Huyện*" readonly="true">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" value="Hữu Văn" class="form-control" id="inputStreet" placeholder="Phường/Xã*" readonly="true">
+                    </div>
+                    <div class="col-12 mb-3">
+                      <input type="text" value="Số nhà 41, Hữu Văn, Chương Mỹ, Hà Nội" class="form-control" id="inputAddress" placeholder="Địa chỉ*" readonly="true">
+                    </div>
+                    <div class="col-12 py-3 d-flex justify-content-between">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-chevron-left"></i> Tiếp tục mua sắm</a>
+                        <button type="submit" class="next_b2 btn btn-dark btn-sm" style="width: 200px;">Tiếp tục</button>
+                    </div>
+                </form>
+            </div>
+            <div class="shipping_info_b2 d-none col-12 col-lg-6 pe-4" style="border-right: solid black 1px;">
+                <h4 class="mb-4">Phương thức thanh toán</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Chuyển khoản
+                    </label>
+                </div>
+                <div class="bg-body-tertiary p-3 mt-4 mb-4">
+                    <p>Thực hiện thanh toán của bạn trực tiếp vào tài khoản ngân hàng của chúng mình. Vui lòng sử dụng ID đơn đặt hàng của bạn làm tham
+                         chiếu thanh toán. Đơn đặt hàng của bạ sẽ không được chuyển cho đến khi tài khoản của chúng mình thông báo đã nhận</p>
+                </div>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Thanh toán khi nhận hàng
+                    </label>
+                </div>
+                <div class="col-12 py-4 d-flex justify-content-between" style="margin-top: 80px;">
+                    <a class="pre_b1 nav-link" href="#"><i class="fa-solid fa-chevron-left"></i> Chỉnh sửa thông tin đơn hàng</a>
+                    <button type="submit" class=" btn btn-dark btn-sm" style="width: 200px;">Đặt hàng</button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 ps-4">
+                <h4 class="mb-4">Giỏ hàng</h4>
+                <div class="list-products">
+                    <div class="row border-bottom py-3" style="color: rgb(71, 71, 71);">
+                        <div class="col-md-3">
+                            <img src="../../access/image/Hoodie/hoodie_basic_boxy_black.jpg" alt="" style="width: 100px;">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                            <div><span >Hoodie Basic Boxy</span></div>
+                            <div><span>XL</span></div>
+                            <div class=""><span>x2</span></div>
+                        </div>
+                        <div class="col-3 text-end">
+                            <span>230.000</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" method="post" class="mt-4">
+                    <div class="row py-3">
+                        <div class="col-9">
+                            <input type="text" class="form-control" style="border: none;border-radius: 0; border-bottom: solid 1px var(--bs-border-color);" placeholder="Nhập mã giảm giá">
+                        </div>
+                        <div class="col-3 text-end">
+                            <button type="button" class="btn btn-dark btn-sm">Áp dụng</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="row border-top border-bottom mt-4 mb-4 ms-0" style="color: rgb(141, 141, 141);">
+                    <div class="col-12 d-flex justify-content-between mb-4 mt-4">
+                        <div><span>Tạm tính</span></div>
+                        <div><span>460.500 vnđ</span></div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between mb-4">
+                        <div><span >Phí vận chuyển</span></div>
+                        <div><span>10.500 vnđ</span></div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between border-top py-4">
+                        <div><span >Tổng</span></div>
+                        <div><span>475.500 vnđ</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 pt-5 border-top">
+        <div class="container py-5">
+            <div class="row">
+                 <div class="col-4 justify-content-start">
+                    <h5 class="pb-4">VỀ CHÚNG TÔI</h5>
+                    <ul class="list-unstyled fw-light">
+                        <li class="pb-4">McShop - Share your color with world</li> 
+                        <li class="pb-2">HỘ KINH DOANH Red Label </li>
+                        <li class="pb-2">GPKD được cấp bởi Cục Cảnh sát QLHC TTXH </li>
+                        <li class="pb-2">Trụ sở kinh doanh:Km10, Nguyễn Trãi, tp Hà Nội</li>
+                        <li class="pb-2">Mã số thuế: 458912H4</li>
+                        <li class="pb-2">Ngày cấp: 15/01/2022</li>
+                        <li class="pb-2">Người đại diện: Vũ Viết Duy</li>
+                        <li class="pb-2">Mã số thuế cá nhân: 897516H-5421</li>
+                    </ul>
+                 </div>
+
+                 <div class="col-2">
+                    <h5 class="pb-4">LIÊN HỆ</h5>
+                    <ul class="list-unstyled">
+                        <li class="">Hotline</li>
+                        <li class="pb-3 fw-bold">1900657892 </li>
+                        <li class="">Email</li>
+                        <li class="pb-3 fw-bold">Duy456@gmail.com</li>
+                        <li class="">Thứ hai - Chủ nhật</li>
+                        <li class="pb-3 fw-bold">09:30~21:30</li>
+                        <li class="">Email liên hệ công việc</li>
+                        <li class="pb-3 fw-bold">Dyudt@gmail.com</li>
+                    </ul>
+                 </div>
+
+                 <div class="col-2">
+                    <h5 class="pb-4">DANH MỤC SẢN PHẨM</h5>
+                    <ul class="list-unstyled">
+                        <li class="pb-4"><a class="nav-link" href="#">Tất cả</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Cardigan</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Hoodie</a></li>                  
+                        <li class="pb-4"><a class="nav-link" href="#">Jacket</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Polo</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Sweater</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">T-Shirt</a></li>
+                    </ul>
+                 </div>
+
+                 <div class="col-2">
+                    <h5 class="pb-4">HỖ TRỢ</h5>
+                    <ul class="list-unstyled fw-light">
+                        <li class="pb-4"><a class="nav-link" href="#">DUY FABBRIC</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Tài khoản</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Chính sách vận chuyển</a></li>                  
+                        <li class="pb-4"><a class="nav-link" href="#">Thanh toán trực tuyến</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Chính sách bảo mật</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Chính sách bảo hành</a></li>
+                        <li class="pb-4"><a class="nav-link" href="#">Chính sách khiếu nại</a></li>
+                    </ul>
+                 </div>
+
+                 <div class="col-2">
+                    <h5 class="pb-4">CỬA HÀNG</h5>
+                    <ul class="list-unstyled fw-light">
+                        <li class="pb-4">12 Nguyễn Trãi, Hà Đông, tp Hà Nội</li>
+                        <li class="pb-4">8686 Trung Hòa, Cầu Giấy,tp Hà Nội </li>
+                    </ul>
+                 </div>
+            </div>      
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

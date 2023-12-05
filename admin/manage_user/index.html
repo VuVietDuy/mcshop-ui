@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<div class="maga">
+<div class="manage_user">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Quản lý người dùng</li>
+        </ol>
+    </nav>
     <div class="border-bottom pb-4">
         <h2 class="fs--1">Quản lý người dùng</h2>
         <ul class="nav nav-links mb-3 mb-lg-2">
-            <li class="nav-item"><a class="nav-link ps-0 active" aria-current="page" href="#"><span>All </span><span class="text-700 fw-semi-bold">(68817)</span></a></li>
-            <li class="nav-item"><a class="nav-link ps-0" href="#"><span>New </span><span class="text-700 fw-semi-bold">(3)</span></a></li>
+            <li class="nav-item"><a class="nav-link ps-0 active" aria-current="page" href="#"><span>Tổng </span><span class="text-700 fw-semi-bold">(500)</span></a></li>
+            <li class="nav-item"><a class="nav-link ps-0" href="#"><span>Mới </span><span class="text-700 fw-semi-bold">(3)</span></a></li>
         </ul>
         <div class="d-flex justify-content-between">
             <div class="search-box d-flex">
                 <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Search products" aria-label="Search" aria-describedby="addon-wrapping">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Search" aria-describedby="addon-wrapping">
                       </div>
                 </form>
                 <div class="btn-group ms-4" role="group" aria-label="Button group with nested dropdown">
@@ -25,13 +31,13 @@
                             <li><a class="dropdown-item" href="#">Hôm nay</a></li>
                         </ul>
                     </div>
-                    <button type="button" class="btn btn-outline-secondary">More filter</button>
+                    <button type="button" class="btn btn-outline-secondary">Thêm bộ lọc</button>
                 </div>
             </div>
             <div class="btn-toolbar">
-                <button type="button" class="btn btn-primary add_product_btn fw-bold">
+                <!-- <button type="button" class="btn btn-primary add_product_btn fw-bold">
                     <i class="fa-solid fa-plus"></i> Thêm
-                </button>
+                </button> -->
             </div>
         </div>
     </div>
@@ -40,15 +46,15 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th class="white-space-nowrap fs--1 align-middle ps-0" style="max-width:20px; width:18px;">
+                    <th class="white-space-nowrap fs--1 align-middle" style="max-width:20px; width:18px;">
                       <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox"></div>
                     </th>
-                    <th class="position-static" scope="col">CUSTOMER</th>
+                    <th class="position-static" scope="col">KHÁCH HÀNG</th>
                     <th class="position-static" scope="col">EMAIL</th>
-                    <th class="position-static" scope="col">PHONE</th>
-                    <th class="position-static" scope="col">ADDRESS</th>
-                    <th class="position-static" scope="col">ORDER</th>
-                    <th class="position-static" scope="col">CREATED AT</th>
+                    <th class="position-static text-center" scope="col">SỐ ĐIỆN THOẠI</th>
+                    <th class="position-static" scope="col">ĐỊA CHỈ</th>
+                    <th class="position-static text-center" scope="col">ĐƠN ĐẶT</th>
+                    <th class="position-static" scope="col">NGÀY TẠO</th>
                     <th class="position-static text-center" scope="col">THAO TÁC</th>
                 </tr>
             </thead>
