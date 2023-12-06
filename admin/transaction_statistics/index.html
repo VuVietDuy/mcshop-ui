@@ -6,7 +6,7 @@
             <li class="breadcrumb-item active" aria-current="page">Thống kê giao dịch</li>
         </ol>
     </nav>
-    <h2 class="fs--1">Thống kê báo cáo</h2>
+    <h2 class="fs--1 mb-4">Thống kê báo cáo</h2>
     <div class="row mb-4">
         <div class="col-sm-3">
             <div class="card widget-flat">
@@ -14,11 +14,11 @@
                     <div class="float-end">
                         <i class="fa-solid fa-users"></i>
                     </div>
-                    <h5 class="text-muted fw-normal mt-0" title="Number of Customers">Customers</h5>
-                    <h3 class="mt-3 mb-3">36,254</h3>
+                    <h5 class="text-muted fw-normal mt-0" title="Number of Customers">Khách hàng</h5>
+                    <h3 class="mt-3 mb-3">36</h3>
                     <p class="mb-0 text-muted">
                         <span class="text-success me-2"><i class="fa-solid fa-up-long"></i> 5.27%</span>
-                        <span class="text-nowrap">Since last month</span>  
+                        <span class="text-nowrap">So với tháng trước</span>  
                     </p>
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
@@ -30,11 +30,11 @@
                     <div class="float-end">
                         <i class="fa-solid fa-cart-plus"></i>
                     </div>
-                    <h5 class="text-muted fw-normal mt-0" title="Number of Orders">Orders</h5>
-                    <h3 class="mt-3 mb-3">5,543</h3>
+                    <h5 class="text-muted fw-normal mt-0" title="Number of Orders">Đơn hàng</h5>
+                    <h3 class="mt-3 mb-3">543</h3>
                     <p class="mb-0 text-muted">
                         <span class="text-danger me-2"><i class="fa-solid fa-down-long"></i> 1.08%</span>
-                        <span class="text-nowrap">Since last month</span>
+                        <span class="text-nowrap">So với tháng trước</span>
                     </p>
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
@@ -46,11 +46,11 @@
                     <div class="float-end">
                         <i class="fa-solid fa-dollar-sign"></i>
                     </div>
-                    <h5 class="text-muted fw-normal mt-0" title="Average Revenue">Revenue</h5>
-                    <h3 class="mt-3 mb-3">$6,254</h3>
+                    <h5 class="text-muted fw-normal mt-0" title="Average Revenue">Doanh thu</h5>
+                    <h3 class="mt-3 mb-3">20.000.000</h3>
                     <p class="mb-0 text-muted">
                         <span class="text-danger me-2"><i class="fa-solid fa-down-long"></i> 7.00%</span>
-                        <span class="text-nowrap">Since last month</span>
+                        <span class="text-nowrap">So với tháng trước</span>
                     </p>
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
@@ -62,11 +62,11 @@
                     <div class="float-end">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h5 class="text-muted fw-normal mt-0" title="Growth">Growth</h5>
-                    <h3 class="mt-3 mb-3">+ 30.56%</h3>
+                    <h5 class="text-muted fw-normal mt-0" title="Growth">Tăng trưởng</h5>
+                    <h3 class="mt-3 mb-3">+ 10.56%</h3>
                     <p class="mb-0 text-muted">
-                        <span class="text-success me-2"><i class="fa-solid fa-up-long"></i>  4.87%</span>
-                        <span class="text-nowrap">Since last month</span>
+                        <span class="text-success me-2"><i class="fa-solid fa-up-long"></i> 4.87%</span>
+                        <span class="text-nowrap">So với tháng trước</span>
                     </p>
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
@@ -74,10 +74,10 @@
     </div>
     
     <div class="row mb-4">
-        <div class="col-12">
+        <div class="col-8">
             <div class="card card-h-100">
                 <div class="d-flex card-header justify-content-between align-items-center bg-white border-none">
-                    <h4 class="header-title">Projections Vs Actuals</h4>
+                    <h5 class="header-title">Doanh số theo tháng</h5>
                     <div class="dropdown">
                         <a href="#" class="dropdown card-drop" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -95,8 +95,35 @@
                     </div>
                 </div>
                 <div class="card-body pt-0">
-                    <div class="row" style="margin: auto;">
-                        <canvas id="thong_ke_giao_dich"></canvas>
+                    <div class="row" style="margin: auto; height: 480px;">
+                        <canvas id="thong_ke_giao_dich" height="480px"></canvas>
+                    </div>
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+        </div>
+        <div class="col-4">
+            <div class="card card-h-100">
+                <div class="d-flex card-header justify-content-between align-items-center bg-white border-none">
+                    <h5 class="header-title">Doanh số tuần này</h5>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item">Line Chart</a>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item">Bar Chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="row" style="margin: auto; height: 480px;">
+                        <canvas id="thong_ke_giao_dich_1" height="480px"></canvas>
                     </div>
                 </div> <!-- end card-body-->
             </div> <!-- end card-->

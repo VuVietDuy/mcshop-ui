@@ -33,7 +33,7 @@ function addRowIntoListProducts(table, productName, color, size, price, quantity
     const r = `<td class="product_name align-middle p-3">${productName}</td>
                 <td class="color align-middle p-3">${color}</td>
                 <td class="size align-middle p-3">${size}</td>
-                <td class="price align-middle p-3">${price}</td>
+                <td class="price align-middle p-3 text-end">${price}</td>
                 <td class="quantity align-middle p-3">${quantity}</td>
                 <td class="total align-middle p-3">${total}</td>
                 `

@@ -52,7 +52,7 @@ function addRow(table, imgSrc, productTitle, price, category, colors, publishedA
             </button>
             <ul class="dropdown-menu">
                 <li><a class="edit_product dropdown-item" href="#">Chỉnh sửa</a></li>
-                <li><a class="dropdown-item" href="#">Xoá</a></li>
+                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Xoá</a></li>
             </ul>
         </div>
     </td>`

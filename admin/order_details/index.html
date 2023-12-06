@@ -1,8 +1,8 @@
 <div>
     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a class="" href="#">Trang chủ</a></li>
-            <li class="breadcrumb-item" aria-current="page">Quản lý đơn đặt</li>
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Quản lý đơn đặt</a></li>
             <li class="breadcrumb-item active" aria-current="page">Chi tiết đơn đặt</li>
         </ol>
     </nav>
@@ -12,7 +12,7 @@
             <div class="col-auto">
                 <div class="d-flex align-items-center mb-2 ">
                     <button class="pre_btn btn fs--2"><i class="fa-solid fa-chevron-left"></i></button>
-                    <h2 class="d-inline mb-0 ms-2">Order</h2>
+                    <h2 class="d-inline mb-0 ms-2">Đơn đặt</h2>
                 </div>
                 <h5 class="customer_id_title text-700 fw-semi-bold"></h5>
             </div>
@@ -23,17 +23,17 @@
         <div class="col-md-8">
             <div class="card" style="height: 100%; max-height: 365px;">
                 <div class="card-body table-responsive">
-                    <h4 class="header_title_order_detail mb-3">Order #00001</h4>
+                    <h5 class="header_title_order_detail mb-3">Đơn đặt #00001</h5>
                     <div class="">
                         <table class="table">
                             <thead class="table-light">
                                 <tr>
-                                    <th class="position-static p-3" scope="col">PRODUCTS</th>
-                                    <th class="position-static p-3" scope="col">COLOR</th>
-                                    <th class="position-static p-3" scope="col">SIZE</th>
-                                    <th class="position-static p-3" scope="col">PRICE</th>
-                                    <th class="position-static p-3" scope="col">QUANTITY</th>
-                                    <th class="position-static p-3" scope="col">TOTAL</th>
+                                    <th class="position-static p-3" scope="col">SẢM PHẨM</th>
+                                    <th class="position-static p-3" scope="col">MÀU</th>
+                                    <th class="position-static p-3" scope="col">KÍCH CỠ</th>
+                                    <th class="position-static p-3 text-end" scope="col">GIÁ</th>
+                                    <th class="position-static p-3" scope="col">SỐ LƯỢNG</th>
+                                    <th class="position-static p-3" scope="col">TỔNG</th>
                                 </tr>
                             </thead>
                             <tbody class="list_product_of_order">
@@ -48,32 +48,32 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title mb-3">Order Summary</h4>
+                    <h5 class="header-title mb-3">Order Summary</h5>
 
                     <div class="table-responsive">
                         <table class="table mb-0">
                             <thead class="table-light">
                             <tr>
                                 <th class="p-3">Description</th>
-                                <th class="p-3">Price</th>
+                                <th class="p-3 pe-5 text-end">Price</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="p-3">Grand Total :</td>
-                                <td class="p-3">$1641</td>
+                                <td class="p-3">Giá :</td>
+                                <td class="p-3 pe-5 text-end">1.200.000</td>
                             </tr>
                             <tr>
-                                <td class="p-3">Shipping Charge :</td>
-                                <td class="p-3">$23</td>
+                                <td class="p-3">Phí vận chuyển :</td>
+                                <td class="p-3 pe-5 text-end">10.500</td>
                             </tr>
                             <tr>
-                                <td class="p-3">Estimated Tax : </td>
-                                <td class="p-3">$19.22</td>
+                                <td class="p-3">Thuế : </td>
+                                <td class="p-3 pe-5 text-end">10.000</td>
                             </tr>
                             <tr>
-                                <th class="p-3">Total :</th>
-                                <th class="p-3">$1683.22</th>
+                                <th class="p-3">Tổng :</th>
+                                <th class="p-3 pe-5 text-end">1.999.500</th>
                             </tr>
                             </tbody>
                         </table>
@@ -88,15 +88,14 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-body" style="height: 210px;">
-                    <h4 class="header-title mb-3">Shipping Information</h4>
+                    <h5 class="header-title mb-3">Giao hàng</h5>
 
-                    <h5>Stanley Jones</h5>
-                    
+                    <b>Vũ Viết Duy</b>
                     <address class="mb-0 font-14 address-lg">
-                        795 Folsom Ave, Suite 600<br>
-                        San Francisco, CA 94107<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890 <br>
-                        <abbr title="Mobile">M:</abbr> (+01) 12345 67890
+                        Số nhà 41, Hữu Văn, Chương Mỹ, Hà Nội<br>
+                        Hữu Văn, Chương Mỹ, Hà Nội<br>
+                        <abbr title="Phone">P:</abbr> 0978028844 <br>
+                        <abbr title="Mobile">M:</abbr> 0978028844
                     </address>
 
                 </div>
@@ -106,13 +105,13 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-body" style="height: 210px;">
-                    <h4 class="header-title mb-3">Billing Information</h4>
+                    <h4 class="header-title mb-3">Hoá đơn</h4>
 
                     <ul class="list-unstyled mb-0">
                         <li>
-                            <p class="mb-2"><span class="fw-bold me-2">Payment Type:</span> Credit Card</p>
-                            <p class="mb-2"><span class="fw-bold me-2">Provider:</span> Visa ending in 2851</p>
-                            <p class="mb-2"><span class="fw-bold me-2">Valid Date:</span> 02/2020</p>
+                            <p class="mb-2"><span class="fw-bold me-2">Phương thức thanh toán:</span> Chuyển khoản</p>
+                            <p class="mb-2"><span class="fw-bold me-2">Nhà cung cấp:</span></p>
+                            <p class="mb-2"><span class="fw-bold me-2">Ngày:</span> 02/2023</p>
                             <p class="mb-0"><span class="fw-bold me-2">CVV:</span> xxx</p>
                         </li>
                     </ul>
@@ -124,7 +123,7 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-body" style="height: 210px;">
-                    <h4 class="header-title mb-3">Delivery Info</h4>
+                    <h4 class="header-title mb-3">Vận chuyển</h4>
 
                     <div class="text-center">
                         <i class="mdi mdi-truck-fast h2 text-muted"></i>
@@ -142,7 +141,7 @@
             <div class="d-md-flex justify-content-between align-items-center mb-5">
                 <div>
                     <!-- text -->
-                    <h4 class="mb-3 mb-md-0">Order Status</h4>
+                    <h5 class="mb-3 mb-md-0">Trạng thái</h5>
                 </div>
                 <div>
                     <!-- button -->
@@ -152,72 +151,48 @@
             </div>
             <div>
                 <!-- List group -->
-                <ul class=" d-flex justify-content-between list-group list-group-flush list-timeline-activity">
-                    <li class="list-group-item px-0 pt-0 border-0 mb-4">
-                        <div class="row">
-                            <!-- col -->
-                            <div class="col-auto">
-                                <div class="icon-shape icon-md rounded-circle bg-primary text-white position-relative z-1">
-                                    <i class="fe fe-shopping-cart"></i>
-                                </div>
-                            </div>
-                            <!-- col -->
-                            <div class="col ms-n2 mt-1">
-                                <h4 class="mb-3">Order Placed</h4>
-                                <h5 class="mb-0">An order has been placed.</h5>
+                <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%"></div>
+                </div>
+                <ul class="row d-flex justify-content-between">
+                    <li class="col-3 px-3 list-group-item px-0 pt-0 border-0 mb-4">
+                        <div class="">
+                            <div class="col ms-n2 mt-1 text-success">
+                                <h6 class="mb-3"><i class="fa-solid fa-cart-shopping"></i> Đặt hàng</h6>
+                                <p class="mb-0">Một đơn hàng</p>
                                 <span class="fs-6">Wed, 15 April 2022 at 4:30 pm</span>
                             </div>
                         </div>
                     </li>
                     <!-- List group -->
-                    <li class="list-group-item px-0 pt-0 border-0 mb-4">
-                        <div class="row">
-                            <!-- col -->
-                            <div class="col-auto">
-                                <div class="icon-shape icon-md rounded-circle bg-primary text-white position-relative z-1">
-                                    <i class="fe fe-shopping-bag"></i>
-                                </div>
-                            </div>
-                            <!-- col -->
-                            <div class="col ms-n2 mt-1">
-                                <h4 class="mb-3">Packed Thu, 16 April 2022</h4>
-                                <h5 class="mb-0">Your Item has been picked up by courier patner</h5>
+                    <li class="col-3 px-3 list-group-item px-0 pt-0 border-0 mb-4">
+                        <div class="">
+                            <div class="col ms-n2 mt-1 text-success">
+                                <h6 class="mb-3"><i class="fa-solid fa-bag-shopping"></i> Đóng gói</h6>
+                                <p class="mb-0">Mặt hàng của bạn đã được người nhận chuyển phát nhanh nhận</p>
                                 <span class="fs-6">Wed, 15 April 2022 at 4:30 pm</span>
                             </div>
                         </div>
                     </li>
                     <!-- List group -->
-                    <li class="list-group-item px-0 pt-0 border-0 mb-4">
-                        <div class="row">
+                    <li class="col-3 px-3 list-group-item px-0 pt-0 border-0 mb-4">
+                        <div class="">
                             <!-- col -->
-                            <div class="col-auto">
-                                <div class="icon-shape icon-md rounded-circle bg-primary text-white position-relative z-1">
-                                    <i class="fe fe-box"></i>
-                                </div>
-                            </div>
-                            <!-- col -->
-                            <div class="col ms-n2 mt-1">
-                                <h4 class="mb-3">Shipping Thu, 16 April 2022</h4>
-                                <h5 class="mb-1">BlueDart Logistics GEEK3214566</h5>
-                                <h5 class="mb-1">Your item has been shipped.</h5>
+                            <div class="col ms-n2 mt-1 text-primary">
+                                <h6 class="mb-3 "><i class="fa-solid fa-box"></i> Đang vận chuyển</h6>
+                                <p class="mb-1">BlueDart Logistics GEEK3214566</p>
+                                <p class="mb-1">Đơn hàng đã giao cho đơn vị vận chuyển.</p>
                                 <span class="fs-6">Thu, 16 April 2022 at 5:00 pm</span>
                             </div>
                         </div>
                     </li>
                     <!-- List group -->
-                    <li class="list-group-item px-0 pt-0 border-0">
-                        <div class="row">
-                            <!-- col -->
-                            <div class="col-auto">
-                                <div class="icon-shape icon-md rounded-circle bg-light-primary text-primary position-relative z-1">
-                                    <i class="fe fe-gift"></i>
-                                </div>
-                            </div>
-                            <!-- col -->
+                    <li class="col-3 px-3 list-group-item px-0 pt-0 border-0">
+                        <div class="">
                             <div class="col ms-n2 mt-1">
-                                <h4 class="mb-0">Delivered</h4>
-                                <h5 class="mb-1">Order has been successfully delivered</h5>
-                                <span class="fs-6">Thu, 17 April 2022 at 9:50am</span>
+                                <h6 class="mb-0"><i class="fa-solid fa-gift"></i> Giao hàng</h6>
+                                <p class="mb-1">Đang chờ</p>
+                                <span class="fs-6"></span>
                             </div>
                         </div>
                     </li>

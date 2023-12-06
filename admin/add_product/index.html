@@ -4,15 +4,15 @@
             <div class="col-auto">
                 <div class="d-flex align-items-center mb-2 ">
                     <button class="pre_btn btn fs--2"><i class="fa-solid fa-chevron-left"></i></button>
-                    <h2 class="d-inline mb-0 ms-2">Add a product</h2>
+                    <h2 class="d-inline mb-0 ms-2">Thêm mới sản phẩm</h2>
                 </div>
-                <h5 class="text-700 fw-semi-bold">Orders placed across your store</h5>
+                <h5 class="text-700 fw-light">Sản phẩm sẽ được hiện thị trên cửa hàng của bạn</h5>
             </div>
             <div class="d-flex align-items-end">
-                <button class="bd-custom btn btn-outline-secondary me-2 mb-2 mb-sm-0" type="button">Discard</button>
-                <button class="bd-custom btn btn-outline-primary me-2 mb-2 mb-sm-0" type="button">Save draft</button>
+                <button class="bd-custom btn btn-outline-secondary me-2 mb-2 mb-sm-0" type="button">Huỷ bỏ</button>
+                <button class="bd-custom btn btn-outline-primary me-2 mb-2 mb-sm-0" type="button">Lưu bản nháp</button>
                 <button type="button" class="btn btn-primary add_product_btn">
-                    Publish product
+                    Phát hành
                 </button>
             </div>
         </div>
@@ -20,14 +20,14 @@
 
     <div class="row">
         <div class="col-md-8">
-            <h4 class="mb-3">Product Title</h4>
+            <h4 class="mb-3">Tên sản phẩm</h4>
             <input type="text" class="form-control mb-4" placeholder="Write title here...">
-            <h4 class="mb-3">Product description</h4>
+            <h4 class="mb-3">Mô tả</h4>
             <div class="form-floating mb-4">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Write product description here ...</label>
+                <label for="floatingTextarea2">Viết mô tả ở đây ...</label>
               </div>
-            <h4 class="mb-3">Display images</h4>
+            <h4 class="mb-3">Ảnh hiện thị</h4>
             <div class="input-group mb-5">
                 <input type="file" class="form-control" id="inputGroupFile02" multiple>
                 <label class="input-group-text" for="inputGroupFile02" >
@@ -39,13 +39,13 @@
                 <div class="col-md-4 mt-0 p-0">
                     <ul class="nav flex-column border">
                         <li class="nav-item">
-                          <a class="nav-link p-3 active" aria-current="page">Pricing</a>
+                          <a class="nav-link p-3 active" aria-current="page">Giá</a>
                         </li>
                         <li class="nav-item border-top">
-                          <a class="nav-link p-3">Restock</a>
+                          <a class="nav-link p-3">Kho</a>
                         </li>
                         <li class="nav-item border-top">
-                          <a class="nav-link p-3">Attributes</a>
+                          <a class="nav-link p-3">Thêm</a>
                         </li>
                       </ul>
                 </div>
@@ -53,17 +53,17 @@
                 <div class="col-md-8 mt-0 p-3 ps-4 border">
 
                     <!-- Pricing -->
-                    <div class="tab-pane fade active d-none" id="pricingTabContent" role="tabpanel" aria-labelledby="#pricingTab">
-                        <h4 class="mb-3 d-sm-none">Pricing</h4>
+                    <div class="" id="pricingTabContent" role="tabpanel" aria-labelledby="#pricingTab">
+                        <h4 class="mb-3 d-sm-none">Giá</h4>
                         <div class="row g-3">
                           <div class="col-12 col-lg-6">
-                            <h5 class="mb-2 text-1000">Regular price</h5><input class="form-control" type="text" placeholder="$$$">
+                            <h6 class="mb-2 text-1000">Regular price</h6><input class="form-control" type="text" placeholder="$$$">
                           </div>
                           <div class="col-12 col-lg-6">
-                            <h5 class="mb-2 text-1000">Sale price</h5><input class="form-control" type="text" placeholder="$$$">
+                            <h6 class="mb-2 text-1000">Sale price</h6><input class="form-control" type="text" placeholder="$$$">
                           </div>
                         </div>
-                        <div>
+                        <div class="py-3">
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                                 <label class="form-check-label" for="flexSwitchCheckDefault">Sản phẩm đang sale</label>
@@ -73,36 +73,37 @@
 
                     <!-- Add to stock -->
                     <div class="d-flex flex-column d-none">
-                        <h5 class="mb-3 text-1000">Add to Stock</h5>
+                        <h5 class="mb-3 text-1000">Thêm vào kho</h5>
                         <div class="row g-3 flex-1 mb-4">
                             <div class="col-sm-7"><input class="form-control" type="number" placeholder="Quantity"></div>
-                            <div class="col-sm"><button class="btn btn-primary" type="button">Confirm</button></div>
+                            <div class="col-sm"><button class="btn btn-primary" type="button">Xác nhận</button></div>
                         </div>
                     </div>
 
                     <!-- Attributes -->
-                    <div class="form-check ">
-                        <h5 class="mb-3 text-1000">Attributes</h5>
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Fragile Product
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Biodegradable
-                        </label>
+                    <div class="d-none">
+                        <div class="form-check d-none">
+                            <h5 class="mb-3 text-1000">Thêm</h5>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Fragile Product
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Biodegradable
+                            </label>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="col-md-4">
             <div class="card mb-3">
                 <div class="card-body">
-                    <h4>Originze</h4>
-                    <h5>Category</h5>
+                    <h5>Phân loại</h5>
+                    <h6>Loại</h6>
                     <select class="form-select mb-3" aria-label="category">
                         <option value="cardigan">Cardigan</option>
                         <option value="hoodie">Hoodie</option>
@@ -111,26 +112,61 @@
                         <option value="sweater">Sweater</option>
                         <option value="t-shirt">T-shirt</option>
                     </select>
-                    <h5>Collection</h5>
+                    <h6>Bộ sưu tập</h6>
                     <input class="form-control" type="text" name="collection" id="" placeholder="Collection">
                 </div>
             </div>
 
             <div class="card mb-3">
                 <div class="card-body row">
-                    <h4>Variants</h4>
-                    <h5>Size</h5>
-                        <script>
-                            console.log("object");
-                        </script>
-                    <select class="form-select mb-3" aria-label="category">
-                        <option value="cardigan">Cardigan</option>
-                        <option value="hoodie">Hoodie</option>
-                        <option value="jacket">Jacket</option>
-                        <option value="polo">Polo</option>
-                        <option value="sweater">Sweater</option>
-                        <option value="t-shirt">T-shirt</option>
-                    </select>
+                    <h5>Variants</h5>
+                    <h6>Size</h6>
+                    <div class="col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="red" id="red">
+                            <label class="form-check-label" for="red">
+                                S
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="blue" id="blue">
+                            <label class="form-check-label" for="blue">
+                                M
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="yellow" id="yellow">
+                            <label class="form-check-label" for="yellow">
+                                L
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="green" id="green">
+                            <label class="form-check-label" for="green">
+                                XL
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="black" id="black">
+                            <label class="form-check-label" for="black">
+                                XXL
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="white" id="white">
+                            <label class="form-check-label" for="white">
+                                XXXL
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="white" id="white">
+                            <label class="form-check-label" for="white">
+                                XXXXL
+                            </label>
+                        </div>
+                    </div>
                     <h5>Color</h5>
                     <div class="col-6">
                         <div class="form-check">
