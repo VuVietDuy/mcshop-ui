@@ -12,3 +12,7 @@ body {
 .border_none {
     border: none;
 }
+
+.w-80 {
+    width: 80px;
+}

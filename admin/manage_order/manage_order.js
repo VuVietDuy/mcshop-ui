@@ -14,7 +14,7 @@ manageOrderNav.addEventListener('click', function() {
                 console.log(customer);
                 const src = customer.srcAvatarImg === "" ? "../access/image/Avatar/avatar.jpeg" : customer.srcAvatarImg;
                 console.log(src);
-                addRowIntoManageOderTable(tableManageOrder, item.orderId, item.total , src, customer.customerName, item.paymentStatus, item.paymentMethod, item.orderStatus, item.createAt)
+                addRowIntoManageOderTable(tableManageOrder, item.orderId, item.total , src, customer.customerName, item.paymentStatus, item.paymentMethod, item.status, item.createAt)
             })
 
             $('.view_order').addEventListener('click', viewMoreOrder)
@@ -41,13 +41,13 @@ function addRowIntoManageOderTable(table, orderId, total, srcAvatarCustomer, cus
                     </div>
                 </td>
                 <td class="payment_status align-middle">
-                    <span class="badge badge-tag me-2 mb-2 text-bg-success">${paymentStatus}</span>
+                    <span class="badge badge-tag me-2 mb-2  text-bg-success">${paymentMethod}</span>
                 </td>
                 <td class="payment_status align-middle">
-                    <span class="badge badge-tag me-2 mb-2 text-bg-success">${paymentMethod}</span>
+                    <span class="badge badge-tag me-2 mb-2  ${paymentStatus==="Đã thanh toán" ? "text-bg-success" : "text-bg-warning"}">${paymentStatus}</span>
                 </td>
                 <td class="fulfilment_status align-middle white-space-nowrap review pb-2 ps-3">
-                    <span class="badge badge-tag me-2 mb-2 text-bg-success">${orderStatus}</span>
+                    <span class="badge badge-tag me-2 mb-2 ${orderStatus==="Đã giao hàng" ? "text-bg-success" : "text-bg-info"}">${orderStatus}</span>
                 </td>
                 <td class="time align-middle white-space-nowrap text-600">${date}</td>
                 <td class="action ps-2 align-middle text-center">

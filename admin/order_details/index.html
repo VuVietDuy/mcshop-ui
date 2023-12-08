@@ -145,7 +145,7 @@
                 </div>
                 <div>
                     <!-- button -->
-                    <a href="#" class="btn btn-light-primary btn-sm text-primary">Change Address</a>
+                    <a href="#" class="btn btn-light-primary btn-sm text-primary"  data-bs-toggle="modal" data-bs-target="#changeAddressModal">Change Address</a>
                     <a href="#" class="btn btn-light-danger btn-sm text-danger ms-2">Cancel Order</a>
                 </div>
             </div>
@@ -199,6 +199,44 @@
                     <!-- List group -->
                 </ul>
             </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="changeAddressModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content px-4 pb-4">
+            <form class="row g-3">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Thay đổi địa chỉ</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="col-12 mt-4 mb-3">
+                    <input type="text" value="Vũ Viết Duy" class="form-control" id="name" placeholder="Họ và tên*">
+                  </div>
+                <div class="col-md-12 mb-3 border-none">
+                  <input type="email" value="vuvietduy@gmail.com" class="form-control" id="inputEmail" placeholder="Email*">
+                </div>
+                <div class="col-md-12 mb-3">
+                  <input type="text" value="0987654321" class="form-control" id="inputPhone" placeholder="Số điện thoại*">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="text" value="Hà Nội" class="form-control" id="inputCity" placeholder="Tỉnh/Thành phố*">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="text" value="Chương Mỹ" class="form-control" id="inputDistrict" placeholder="Quận/Huyện*">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="text" value="Hữu Văn" class="form-control" id="inputStreet" placeholder="Phường/Xã*">
+                </div>
+                <div class="col-12 mb-3">
+                    <input type="text" value="Số nhà 41, Hữu Văn, Chương Mỹ, Hà Nội" class="form-control" id="inputAddress" placeholder="Địa chỉ*">
+                </div>
+                <div class="">
+                    <button type="button" class="btn btn-primary float-end w-80" data-bs-dismiss="modal">Lưu</button>
+                    <button type="button" class="btn btn-secondary me-2 float-end w-80" data-bs-dismiss="modal">Huỷ</button>
+                </div>
+            </form>
+        </div>
         </div>
     </div>
 </div>

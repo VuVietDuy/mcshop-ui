@@ -30,7 +30,7 @@ function addRow(table, id, imgSrc, productTitle, price, category, colors, publis
 
     var c = ""
     colors.map((item)=> {
-        c = c + `<a class="text-decoration-none" href="#!"><span class="badge badge-tag me-2 mb-2 text-bg-secondary">${item}</span></a>`
+        c = c + `<a class="text-decoration-none" href="#!"><span class="badge badge-tag me-2 mb-2 " style="background-color: ${item};">${item}</span></a>`
     })
     
     const row = `<td class="fs--1 align-middle">
