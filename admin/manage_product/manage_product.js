@@ -55,7 +55,7 @@ function addRow(table, id, imgSrc, productTitle, price, category, colors, publis
             </button>
             <ul class="dropdown-menu">
                 <li><a class="edit_product dropdown-item" key=${id} href="#">Chỉnh sửa</a></li>
-                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Xoá</a></li>
+                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalDelete" href="#">Xoá</a></li>
             </ul>
         </div>
     </td>`

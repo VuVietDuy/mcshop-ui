@@ -36,7 +36,7 @@
                             <li><a class="dropdown-item" href="#">T-shirt</a></li>
                         </ul>
                     </div>
-                    <button type="button" class="bd-custom btn btn-outline-secondary">Thêm bộ lọc</button>
+                    <button type="button" class="bd-custom btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalFilter">Thêm bộ lọc</button>
                 </div>
             </div>
             <div class="btn-toolbar">
@@ -89,11 +89,11 @@
     </div>
     
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="modalDeleteLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content border-none">
                 <div class="border_none modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Xác nhận</h1>
+                    <h1 class="modal-title fs-5" id="modalDeleteLabel">Xác nhận</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -104,6 +104,71 @@
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Modal filter-->
+    <div class="modal fade" id="modalFilter" tabindex="-1" aria-labelledby="modalFilterLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalFilterLabel">Thêm bộ lọc</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <h6 class="p-4">Bộ lọc</h6>
+                        <div class="p-4">
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Loại
+                                </label>
+                            </div>
+                            <div class="form-check  mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Giá
+                                </label>
+                            </div>
+                            <div class="form-check  mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Màu
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h6 class="p-4">Sắp xếp</h6>
+                        <div class="p-4">
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Tên
+                                </label>
+                            </div>
+                            <div class="form-check  mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Giá
+                                </label>
+                            </div>
+                            <div class="form-check  mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Ngày phát hành
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+            <button type="button" class="btn btn-primary">Lưu</button>
+            </div>
+        </div>
         </div>
     </div>
 </div>
