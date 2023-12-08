@@ -29,7 +29,7 @@ const products = [
         salePrice: 100,
         isSale: false,
         category: categorys[0],
-        colection: "",
+        colection: "thu đông",
         productDescription: "Cardigan Play",
         colors: ["Black", "Green"],
         publishedAt: "Nov 8, 5:32 PM"
@@ -46,7 +46,7 @@ const products = [
         salePrice: 100,
         isSale: false,
         category: categorys[1],
-        colection: "",
+        colection: "thu đông",
         productDescription: "Hoodie Basic Boxy",
         colors: ["Black", "White", "Brown"],
         publishedAt: "Nov 8, 5:32 PM"
@@ -62,7 +62,7 @@ const products = [
         salePrice: 100,
         isSale: false,
         category: categorys[1],
-        colection: "",
+        colection: "thu đông",
         productDescription: "Hoodie Classic",
         colors: ["Black", "Cream"],
         publishedAt: "Nov 8, 5:32 PM"
@@ -78,7 +78,7 @@ const products = [
         salePrice: 100,
         isSale: false,
         category: categorys[1],
-        colection: "",
+        colection: "Thu đông",
         productDescription: "Hoodie Classic Zipper",
         colors: ["Black", "Green"],
         publishedAt: "Nov 8, 5:32 PM"
@@ -94,7 +94,7 @@ const products = [
         salePrice: 100,
         isSale: false,
         category: categorys[1],
-        colection: "",
+        colection: "Thu đông",
         productDescription: "Hoodie Popular Logo",
         colors: ["Cream", "Green"],
         publishedAt: "Nov 8, 5:32 PM"
@@ -110,7 +110,7 @@ const products = [
         salePrice: 100,
         isSale: false,
         category: categorys[2],
-        colection: "",
+        colection: "Thu đông",
         productDescription: "Jacket Line White",
         colors: ["Cream", "Green"],
         publishedAt: "Nov 8, 5:32 PM"
@@ -126,7 +126,7 @@ const products = [
         salePrice: 100,
         isSale: false,
         category: categorys[2],
-        colection: "",
+        colection: "Thu đông",
         productDescription: "Jacket Punch",
         colors: ["Black", "Green"],
         publishedAt: "Nov 8, 5:32 PM"
@@ -142,7 +142,7 @@ const products = [
         salePrice: 100,
         isSale: false,
         category: categorys[2],
-        colection: "",
+        colection: "Thu đông",
         productDescription: "Jacket Sporty",
         colors: ["Black", "Red"],
         publishedAt: "Nov 8, 5:32 PM"
@@ -157,7 +157,7 @@ const products = [
         salePrice: 100,
         isSale: false,
         category: categorys[2],
-        colection: "",
+        colection: "Thu đông",
         productDescription: "Jacket Poppop",
         colors: ["Black", "Green"],
         publishedAt: "Nov 8, 5:32 PM"

@@ -14,14 +14,17 @@ function renderManageProduct() {
             const table = $(".manage_product_table_content")
             
             products?.map((product) => {
-                addRow(table, product.imgSrcs[0], product.productTitle, product.regularPrice, product.category, product.colors, product.publishedAt);
+                addRow(table, product.productId, product.imgSrcs[0], product.productTitle, product.regularPrice, product.category, product.colors, product.publishedAt);
             })
             
-            $('.edit_product')?.addEventListener('click', handleEditProduct)
+            $$('.edit_product').forEach(btn => {
+                btn.addEventListener('click', handleEditProduct);
+            });
+
         });
 }
 
-function addRow(table, imgSrc, productTitle, price, category, colors, publishedAt) {
+function addRow(table, id, imgSrc, productTitle, price, category, colors, publishedAt) {
     const newRow = document.createElement('tr');
     newRow.className = 'position-static';
 
@@ -51,7 +54,7 @@ function addRow(table, imgSrc, productTitle, price, category, colors, publishedA
                 <i class="fa-solid fa-ellipsis"></i>
             </button>
             <ul class="dropdown-menu">
-                <li><a class="edit_product dropdown-item" href="#">Chỉnh sửa</a></li>
+                <li><a class="edit_product dropdown-item" key=${id} href="#">Chỉnh sửa</a></li>
                 <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Xoá</a></li>
             </ul>
         </div>
@@ -63,12 +66,12 @@ function addRow(table, imgSrc, productTitle, price, category, colors, publishedA
 }
                 
 function handleOnclickBtnAddProduct() {
-    renderAddProduct()
+    renderAddProduct(null)
 }
 
-function handleEditProduct() {
-    const a = $('.edit_product')
-    console.log(a);
+function handleEditProduct(event) {
+    const btn = event.currentTarget;
+    renderAddProduct(btn.getAttribute('key')); // or btn.dataset.key
 }
 
 // set default 
