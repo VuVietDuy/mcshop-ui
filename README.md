@@ -2,3 +2,6 @@
 
 ## SOURCE CODE: 
 https://github.com/VuVietDuy/mcshop-ui
+
+## DEPLOY:
+https://mcshop-ui.vercel.app/
